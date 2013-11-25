@@ -26,6 +26,18 @@ public class SumOfDigitsTest {
 		assertSumOfSum(9, 9);
 	}
 
+	@Test
+	public void whenNumberContaintMultipleDigitsButContainsOne_shouldReturnSum() {
+		assertSumOfSum(11L, 2);
+		assertSumOfSum(12L, 3);
+		assertSumOfSum(13L, 4);
+		assertSumOfSum(14L, 5);
+		assertSumOfSum(15L, 6);
+		assertSumOfSum(16L, 7);
+		assertSumOfSum(17L, 8);
+		assertSumOfSum(18L, 9);
+	}
+
 	private void assertSumOfSum(long number, int sum) {
 		assertEquals(sum, sumOfSum(number));
 	}
