@@ -27,7 +27,8 @@ public class SumOfDigits {
 	 *             if {@code number} is smaller than zero
 	 */
 	public static int sumOfSum(long number) {
-		// Your code here ...
+		if (number < 0)
+			throw new IllegalArgumentException();
 		return 0;
 	}
 }
