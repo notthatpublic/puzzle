@@ -27,7 +27,7 @@ public class SumOfDigitsTest {
 	}
 
 	@Test
-	public void whenNumberContaintMultipleDigitsButContainsOne_shouldReturnSum() {
+	public void whenNumberContaintMultipleDigitsButSumContainsOne_shouldReturnSum() {
 		assertSumOfSum(11L, 2);
 		assertSumOfSum(12L, 3);
 		assertSumOfSum(13L, 4);
