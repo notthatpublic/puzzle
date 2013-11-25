@@ -29,9 +29,8 @@ public class SumOfDigits {
 	public static int sumOfSum(long number) {
 		if (number < 0)
 			throw new IllegalArgumentException();
-		if (number < 10)
-			return (int) number;
-		else
-			return (int) (number - 9);
+		while (number > 10)
+			number -= 9;
+		return (int) (number);
 	}
 }
