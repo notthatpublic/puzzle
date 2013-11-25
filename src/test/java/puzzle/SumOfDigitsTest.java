@@ -38,6 +38,12 @@ public class SumOfDigitsTest {
 		assertSumOfSum(18L, 9);
 	}
 
+	@Test
+	public void whenMultipleDigitsWithSumBiggerThan9_shouldReturnSumOfSumsDigits() {
+		assertSumOfSum(19L, 1);
+		assertSumOfSum(12345678901234L, 1);
+	}
+
 	private void assertSumOfSum(long number, int sum) {
 		assertEquals(sum, sumOfSum(number));
 	}
